@@ -43,7 +43,8 @@ const PhotoGallery = () => {
         .then(data => dispatch('updatePhotos', data))
     }, []);
 
-    return (<div>
+    return (
+    <div>
       <InfiniteScroll
               pageStart={page}
               loadMore={loadItems}
@@ -70,7 +71,7 @@ const PhotoGallery = () => {
           ) : null}
         </ModalGateway>
       </InfiniteScroll>
-        </div>
+    </div>
     );
 }
 
